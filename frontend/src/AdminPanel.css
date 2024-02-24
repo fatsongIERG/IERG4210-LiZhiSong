@@ -1,0 +1,175 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .form-section h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-section label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .form-section input[type="text"],
+  .form-section input[type="number"],
+  .form-section textarea,
+  .form-section select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-section input[type="submit"] {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .form-section input[type="submit"]:hover {
+    background: #0056b3;
+  }
+  .list-section {
+    padding: 20px;
+    background-color: #f2f2f2; /* Light grey background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 20px;
+  }
+  
+  .dropdown-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between dropdown and button */
+    margin-top: 10px;
+  }
+  
+  .category-dropdown {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .category-dropdown:hover {
+    border-color: #007bff; /* Blue border on hover */
+  }
+  
+  .delete-button {
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg, #f06, #a2d); /* Gradient background */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    transform: translateY(-2px); /* Slight lift when hovered */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+  
+  .delete-button:active {
+    transform: translateY(1px); /* Pushed down effect when clicked */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .dropdown-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .product-dropdown {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #007bff; /* Blue border */
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .product-dropdown:hover {
+    border-color: #0056b3; /* Darker blue on hover */
+    background-color: #f8f9fa; /* Lighter background on hover */
+  }
+  
+  .delete-button {
+    padding: 10px 20px;
+    background-image: linear-gradient(135deg, #ff5858, #f09819); /* Warm gradient */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .delete-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .delete-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  
+  .dropzone {
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border .24s ease-in-out;
+  }
+  
+  .dropzone:hover {
+    border-color: #0056b3;
+  }
+  
+  .thumbnail {
+    width: 100px; /* or any other size */
+    height: auto;
+    display: block;
+    margin-top: 10px;
+  }
+  

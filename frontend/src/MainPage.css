@@ -1,0 +1,185 @@
+.main-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'nav content content'
+        'nav content content';
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+.breadcrumb {
+    margin-bottom: 20px; /* Keep this if it's needed for other styling */
+    margin-left: 0; /* Adjust this to ensure alignment with product list */
+}
+
+/* Add this to your CSS file */
+.header {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* A subtle bottom border */
+  }
+  
+ 
+  .header-title {
+    font-family: 'Arial', sans-serif; /* Example font */
+    color: #ffffff; /* Adjusted to white for contrast */
+    font-size: 36px; /* Adjust size as needed */
+    font-weight: bold;
+    letter-spacing: 1px; /* Customizable based on preference */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+    text-decoration: none; /* Removes the underline */
+    transition: transform 0.3s ease; /* For a smooth hover effect */
+  }
+  
+  .header-title:hover {
+    transform: scale(1.05); /* Slightly enlarges the text on hover */
+  }
+  
+
+
+.category-menu {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.category-menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+.category-menu a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  .category-menu  a.active {
+    font-weight: bold;
+    background-color: #e0e0e0;
+  }
+.category-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.category-menu li.active,
+.category-menu li:hover {
+    background-color: #e0e0e0;
+}
+
+
+.product-list {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(3,  minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 20px 20px 0; /* Adjusted padding */
+    justify-items: center;
+}
+
+.product-cell {
+    border: 1px solid #e0e0e0;
+    padding: 10px 10px 10px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 350px; /* Fixed width */
+    height: 450px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+}
+
+.product-image {
+    height: 300px; /* Fixed height for image container */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Maintains aspect ratio without cropping */
+    object-position: center; /* Centers the image */
+}
+
+.product-info {
+    margin-top: 10px;
+    text-align: center; /* Centers the product info text */
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049; /* Darker green background on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .header, .category-menu, .product-list {
+        grid-template-columns: 1fr; /* Removed the trailing comma */
+    }
+
+    .category-menu, .product-list {
+        padding: 10px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr; /* Ensures a single column layout */
+    }
+
+    .product-cell {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Height adjusts to content */
+    }
+
+    .product-image {
+        height: auto; /* Height adjusts to the image */
+    }
+}
+
+.admin-panel-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #f09; /* A vibrant pink, for example */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+    /* A little animation to make it "pop" */
+    transform: translateY(0);
+  }
+  
+  .admin-panel-link:hover,
+  .admin-panel-link:focus {
+    color: white;
+    background-color: #c06;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+  }
+  

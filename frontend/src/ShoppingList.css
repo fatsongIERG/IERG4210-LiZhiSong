@@ -1,0 +1,22 @@
+
+  /* Initial state of the shopping list - hidden */
+.shopping-list {
+    display: none;
+    /* other styles */
+    position: fixed;
+    right: 20px;
+    top: 60px; /* Adjust based on your header's height */
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* The shopping list is displayed when the button is hovered */
+.shopping-list-button:hover + .shopping-list {
+    display: block;
+    /* other styles */
+}
+
+
